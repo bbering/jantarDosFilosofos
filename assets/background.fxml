@@ -4,12 +4,66 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.mainController">
    <children>
       <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@backgroundImg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="fork02" fitHeight="36.0" fitWidth="40.0" layoutX="262.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@fork.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="fork01" fitHeight="36.0" fitWidth="40.0" layoutX="334.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@fork.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="fork03" fitHeight="36.0" fitWidth="40.0" layoutX="225.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@fork.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="fork04" fitHeight="36.0" fitWidth="40.0" layoutX="225.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@fork.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="fork07" fitHeight="36.0" fitWidth="40.0" layoutX="379.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@fork.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="fork08" fitHeight="36.0" fitWidth="40.0" layoutX="379.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@fork.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="thinkingKyle" fitHeight="83.0" fitWidth="188.0" layoutX="124.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@thinkingKyle.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="thinkingStan" fitHeight="83.0" fitWidth="188.0" layoutX="315.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@thinkingStan.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="thinkingKenny" fitHeight="83.0" fitWidth="188.0" layoutX="349.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@thinkingKenny.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="thinkingEric" fitHeight="83.0" fitWidth="188.0" layoutX="221.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@thinkingEric.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="thinkingButters" fitHeight="83.0" fitWidth="188.0" layoutX="89.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@thinkingButters.png" />
          </image>
       </ImageView>
    </children>
