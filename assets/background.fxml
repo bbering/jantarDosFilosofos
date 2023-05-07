@@ -11,32 +11,32 @@
             <Image url="@backgroundImg.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="fork02" fitHeight="36.0" fitWidth="40.0" layoutX="262.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="fork03" fitHeight="36.0" fitWidth="40.0" layoutX="262.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@fork.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="fork01" fitHeight="36.0" fitWidth="40.0" layoutX="334.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="fork04" fitHeight="36.0" fitWidth="40.0" layoutX="334.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@fork.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="fork03" fitHeight="36.0" fitWidth="40.0" layoutX="225.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="fork02" fitHeight="36.0" fitWidth="40.0" layoutX="225.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@fork.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="fork04" fitHeight="36.0" fitWidth="40.0" layoutX="225.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="fork01" fitHeight="36.0" fitWidth="40.0" layoutX="225.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@fork.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="fork07" fitHeight="36.0" fitWidth="40.0" layoutX="379.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="fork06" fitHeight="36.0" fitWidth="40.0" layoutX="379.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@fork.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="fork08" fitHeight="36.0" fitWidth="40.0" layoutX="379.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="fork05" fitHeight="36.0" fitWidth="40.0" layoutX="379.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@fork.png" />
          </image>
@@ -61,9 +61,34 @@
             <Image url="@thinkingEric.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="thinkingButters" fitHeight="83.0" fitWidth="188.0" layoutX="89.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="thinkingButters" fitHeight="89.0" fitWidth="197.0" layoutX="82.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@thinkingButters.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="plate01" fitHeight="64.0" fitWidth="71.0" layoutX="198.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@plate.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="plate03" fitHeight="64.0" fitWidth="71.0" layoutX="280.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@plate01.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="plate02" fitHeight="64.0" fitWidth="71.0" layoutX="208.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@plate02.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="plate04" fitHeight="64.0" fitWidth="71.0" layoutX="332.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@plate03.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="plate05" fitHeight="64.0" fitWidth="71.0" layoutX="362.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@plate04.png" />
          </image>
       </ImageView>
    </children>

@@ -1,31 +1,38 @@
 package thread;
 
 import control.*;
-import javafx.application.Platform;
 
 public class Philosopher extends Thread {
     private int id;
-    private String name;
     mainController mainController = new mainController();
 
     public void setController(mainController controller) {
         this.mainController = controller;
     }
 
-    public Philosopher(String name, int id) {
+    public Philosopher(int id) {
         this.id = id;
-        this.name = name;
     }
 
     @Override
     public void run() {
         try {
-            mainController.grabAFork(3);
+            thinking();
         } catch (InterruptedException e) {
         }
         try {
-            mainController.returnFork(3);
+            mainController.grabAFork(4);
         } catch (InterruptedException e) {
+            e.printStackTrace();
         }
+        try {
+            mainController.returnFork(4);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void thinking() throws InterruptedException{
+        sleep(1000);
     }
 }
