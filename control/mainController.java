@@ -7,6 +7,7 @@ import java.util.concurrent.Semaphore;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.Slider;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -19,34 +20,34 @@ public class mainController implements Initializable {
   // SLIDERS
 
   @FXML
-  private Slider buttersESlider;
+  public Slider buttersESlider;
 
   @FXML
-  private Slider buttersTSlider;
+  public Slider buttersTSlider;
 
   @FXML
-  private Slider ericESlider;
+  public Slider ericESlider;
 
   @FXML
-  private Slider ericTSlider;
+  public Slider ericTSlider;
 
   @FXML
-  private Slider kennyESlider;
+  public Slider kennyESlider;
 
   @FXML
-  private Slider kennyTSlider;
+  public Slider kennyTSlider;
 
   @FXML
-  private Slider kyleESlider;
+  public Slider kyleESlider;
 
   @FXML
-  private Slider kyleTSlider;
+  public Slider kyleTSlider;
 
   @FXML
-  private Slider stanESlider;
+  public Slider stanESlider;
 
   @FXML
-  private Slider stanTSlider;
+  public Slider stanTSlider;
 
   // IMAGEVIEW
 
@@ -114,10 +115,6 @@ public class mainController implements Initializable {
   Semaphore mutexSemaphore = new Semaphore(1);
   Semaphore arraySemaphore[] = new Semaphore[nPhilosophers];
 
-  // VARIAVEIS DE VELOCIDADE
-  private int TSpeed = 1000;
-  private int ESpeed = 1000;
-
   @Override
   public void initialize(URL location, ResourceBundle resources) {
     setState();
@@ -134,7 +131,7 @@ public class mainController implements Initializable {
     philosopher3.setController(this);
     philosopher4.setController(this);
     philosopher5.setController(this);
-
+    
     // Startando as threads
     philosopher1.start();
     philosopher2.start();
@@ -238,7 +235,6 @@ public class mainController implements Initializable {
     setThinkingImg(id);
     testAFork(((id - 1) + 5) % 5); // TESTANDO GARFO DA ESQUERDA
     testAFork((id + 1) % 5); // TESTANDO GARFO DA DIREITA
-    System.out.println("O FILOSOFO " + id + " DEVOLVEU OS GARFOS");
     mutexSemaphore.release();
   } // FIM DEVOLVE GARFOS
 
@@ -252,51 +248,5 @@ public class mainController implements Initializable {
   // METODO QUE SETA O ESTADO DE PENSANDO
   public void setState(int id) {
     state[id] = 0;
-  }
-
-  // METODOS QUE SETAM AS VELOCIDADES DE PENSAR E COMER UTILIZANDO OS SLIDERS
-
-  public void setTValue(int id) {
-    if (id == 0) {
-      this.TSpeed = (int) buttersTSlider.getValue() * 1000;
-    }
-    if (id == 1) {
-      this.TSpeed = (int) kyleTSlider.getValue() * 1000;
-    }
-    if (id == 2) {
-      this.TSpeed = (int) ericTSlider.getValue() * 1000;
-    }
-    if (id == 3) {
-      this.TSpeed = (int) stanTSlider.getValue() * 1000;
-    }
-    if (id == 4) {
-      this.TSpeed = (int) kennyTSlider.getValue() * 1000;
-    }
-  }
-
-  public void setEValue(int id) {
-    if (id == 0) {
-      this.ESpeed = (int) buttersESlider.getValue() * 1000;
-    }
-    if (id == 1) {
-      this.ESpeed = (int) kyleESlider.getValue() * 1000;
-    }
-    if (id == 2) {
-      this.ESpeed = (int) ericESlider.getValue() * 1000;
-    }
-    if (id == 3) {
-      this.ESpeed = (int) stanESlider.getValue() * 1000;
-    }
-    if (id == 4) {
-      this.ESpeed = (int) kennyESlider.getValue() * 1000;
-    }
-  }
-
-  public int getTSpeed() {
-      return TSpeed;
-  }
-
-  public int getESpeed() {
-      return ESpeed;
   }
 }

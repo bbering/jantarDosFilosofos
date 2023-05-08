@@ -33,15 +33,41 @@ public class Philosopher extends Thread {
 
   public void thinking() throws InterruptedException {
     Platform.runLater(() -> mainController.setState(id));
-    System.out.println(mainController.getTSpeed());
-    sleep(mainController.getTSpeed());
+    if (id == 0) {
+      sleep((int) (1000 - mainController.buttersTSlider.getValue()));
+    }
+    if (id == 1) {
+      sleep((int) (1000 - mainController.kyleTSlider.getValue()));
+    }
+    if (id == 2) {
+      sleep(((int) (1000 - mainController.ericTSlider.getValue())));
+    }
+    if (id == 3) {
+      sleep(((int) (1000 - mainController.stanTSlider.getValue())));
+    }
+    if (id == 4) {
+      sleep(((int) (1000 - mainController.kennyTSlider.getValue())));
+    }
   }
- 
+
   // METODO ONDE O PERSONAGEM COME
-  
+
   public void eating() throws InterruptedException {
     mainController.setEatingImg(id);
-    System.out.println(mainController.getESpeed());
-    sleep(mainController.getESpeed());
+    if (id == 0) {
+      sleep(((int) (1000 - mainController.buttersESlider.getValue())));
+    }
+    if (id == 1) {
+      sleep(((int) (1000 - mainController.kyleESlider.getValue())));
+    }
+    if (id == 2) {
+      sleep(((int) (1000 - mainController.ericESlider.getValue())));
+    }
+    if (id == 3) {
+      sleep(((int) (1000 - mainController.stanESlider.getValue())));
+    }
+    if (id == 4) {
+      sleep(((int) (1000 - mainController.kennyESlider.getValue())));
+    }
   }
 }
