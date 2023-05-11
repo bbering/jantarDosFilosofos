@@ -1,7 +1,6 @@
 package thread;
 
 import control.*;
-import javafx.application.Platform;
 
 public class Philosopher extends Thread {
   private int id;
@@ -32,21 +31,20 @@ public class Philosopher extends Thread {
   // METODO QUE FAZ O PERSONAGEM "PENSAR"
 
   public void thinking() throws InterruptedException {
-    Platform.runLater(() -> mainController.setState(id));
     if (id == 0) {
-      sleep((int) (1000 - mainController.buttersTSlider.getValue()));
+      sleep((int) (1000 / mainController.buttersTSlider.getValue()));
     }
     if (id == 1) {
-      sleep((int) (1000 - mainController.kyleTSlider.getValue()));
+      sleep((int) (1000 / mainController.kyleTSlider.getValue()));
     }
     if (id == 2) {
-      sleep(((int) (1000 - mainController.ericTSlider.getValue())));
+      sleep(((int) (1000 / mainController.ericTSlider.getValue())));
     }
     if (id == 3) {
-      sleep(((int) (1000 - mainController.stanTSlider.getValue())));
+      sleep(((int) (1000 / mainController.stanTSlider.getValue())));
     }
     if (id == 4) {
-      sleep(((int) (1000 - mainController.kennyTSlider.getValue())));
+      sleep(((int) (1000 / mainController.kennyTSlider.getValue())));
     }
   }
 
@@ -55,19 +53,19 @@ public class Philosopher extends Thread {
   public void eating() throws InterruptedException {
     mainController.setEatingImg(id);
     if (id == 0) {
-      sleep(((int) (1000 - mainController.buttersESlider.getValue())));
+      sleep(((int) (1000 / mainController.buttersESlider.getValue())));
     }
     if (id == 1) {
-      sleep(((int) (1000 - mainController.kyleESlider.getValue())));
+      sleep(((int) (1000 / mainController.kyleESlider.getValue())));
     }
     if (id == 2) {
-      sleep(((int) (1000 - mainController.ericESlider.getValue())));
+      sleep(((int) (1000 / mainController.ericESlider.getValue())));
     }
     if (id == 3) {
-      sleep(((int) (1000 - mainController.stanESlider.getValue())));
+      sleep(((int) (1000 / mainController.stanESlider.getValue())));
     }
     if (id == 4) {
-      sleep(((int) (1000 - mainController.kennyESlider.getValue())));
+      sleep(((int) (1000 / mainController.kennyESlider.getValue())));
     }
   }
 }

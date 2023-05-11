@@ -88,20 +88,21 @@
             <Image url="@plate04.png" />
          </image>
       </ImageView>
-      <Slider fx:id="buttersTSlider" layoutX="66.0" layoutY="317.0" prefHeight="14.0" prefWidth="58.0" />
-      <Slider fx:id="buttersESlider" layoutX="66.0" layoutY="352.0" prefHeight="14.0" prefWidth="58.0" />
-      <Slider fx:id="kyleTSlider" layoutX="179.0" layoutY="317.0" prefHeight="14.0" prefWidth="58.0" />
-      <Slider fx:id="kyleESlider" layoutX="179.0" layoutY="352.0" prefHeight="14.0" prefWidth="58.0" />
-      <Slider fx:id="ericTSlider" layoutX="301.0" layoutY="324.0" prefHeight="14.0" prefWidth="58.0" />
-      <Slider fx:id="ericESlider" layoutX="303.0" layoutY="352.0" prefHeight="14.0" prefWidth="58.0" />
-      <Slider fx:id="stanTSlider" layoutX="409.0" layoutY="324.0" prefHeight="14.0" prefWidth="58.0" />
-      <Slider fx:id="stanESlider" layoutX="409.0" layoutY="352.0" prefHeight="14.0" prefWidth="58.0" />
-      <Slider fx:id="kennyTSlider" layoutX="522.0" layoutY="317.0" prefHeight="14.0" prefWidth="58.0" />
-      <Slider fx:id="kennyESlider" layoutX="522.0" layoutY="352.0" prefHeight="14.0" prefWidth="58.0" />
+      <Slider fx:id="buttersTSlider" layoutX="66.0" layoutY="317.0" max="10.0" min="1.0" prefHeight="14.0" prefWidth="58.0" />
+      <Slider fx:id="buttersESlider" layoutX="66.0" layoutY="352.0" max="10.0" min="1.0" prefHeight="14.0" prefWidth="58.0" />
+      <Slider fx:id="kyleTSlider" layoutX="179.0" layoutY="317.0" max="10.0" min="1.0" prefHeight="14.0" prefWidth="58.0" />
+      <Slider fx:id="kyleESlider" layoutX="179.0" layoutY="352.0" max="10.0" min="1.0" prefHeight="14.0" prefWidth="58.0" />
+      <Slider fx:id="ericTSlider" layoutX="301.0" layoutY="324.0" max="10.0" min="1.0" prefHeight="14.0" prefWidth="58.0" />
+      <Slider fx:id="ericESlider" layoutX="303.0" layoutY="352.0" max="10.0" min="1.0" prefHeight="14.0" prefWidth="58.0" />
+      <Slider fx:id="stanTSlider" layoutX="409.0" layoutY="324.0" max="10.0" min="1.0" prefHeight="14.0" prefWidth="58.0" />
+      <Slider fx:id="stanESlider" layoutX="409.0" layoutY="352.0" max="10.0" min="1.0" prefHeight="14.0" prefWidth="58.0" />
+      <Slider fx:id="kennyTSlider" layoutX="522.0" layoutY="317.0" max="10.0" min="1.0" prefHeight="14.0" prefWidth="58.0" />
+      <Slider fx:id="kennyESlider" layoutX="522.0" layoutY="352.0" min="1.0" prefHeight="14.0" prefWidth="58.0" />
       <Button fx:id="pauseButton01" layoutX="44.0" layoutY="14.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="51.0" stylesheets="@style.css" text="Pause" />
       <Button fx:id="pauseButton02" layoutX="44.0" layoutY="73.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="51.0" stylesheets="@style.css" text="Pause" />
       <Button fx:id="pauseButton03" layoutX="44.0" layoutY="127.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="51.0" stylesheets="@style.css" text="Pause" />
       <Button fx:id="pauseButton04" layoutX="44.0" layoutY="180.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="51.0" stylesheets="@style.css" text="Pause" />
       <Button fx:id="pauseButton05" layoutX="44.0" layoutY="224.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="51.0" stylesheets="@style.css" text="Pause" />
+      <Button fx:id="resetButton" layoutX="519.0" layoutY="20.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="64.0" stylesheets="@style.css" text="Reset" />
    </children>
 </AnchorPane>

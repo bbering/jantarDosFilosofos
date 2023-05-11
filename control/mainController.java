@@ -128,6 +128,11 @@ public class mainController implements Initializable {
   private Button pauseButton05;
   private int isLocked05;
 
+  // BOTAO DE RESET
+
+  @FXML
+  private Button resetButton;
+
   // ARRAYS E SEMAFOROS
 
   private int nPhilosophers = 5;
@@ -214,7 +219,22 @@ public class mainController implements Initializable {
       }
     });
 
+    // BOTAO DE RESTART
+
+    resetButton.setOnAction(new EventHandler<ActionEvent>() {
+      @Override
+      public void handle(ActionEvent event) {
+        philosopher1.stop();
+        philosopher2.stop();
+        philosopher3.stop();
+        philosopher4.stop();
+        philosopher5.stop();
+        createNewThread();
+      }
+    });
+
     // Startando as threads
+
     philosopher1.start();
     philosopher2.start();
     philosopher3.start();
@@ -294,7 +314,7 @@ public class mainController implements Initializable {
     });
   }
 
-  // Metodo que inicia os estados com 0
+  // Metodo que seta os estados com 0
 
   public void setState() {
     for (int i = 0; i <= 4; i++) {
@@ -327,8 +347,74 @@ public class mainController implements Initializable {
     } // FIM DO IF
   } // FIM DO METODO QUE TESTA OS GARFOS
 
-  // METODO QUE SETA O ESTADO DE PENSANDO
-  public void setState(int id) {
-    state[id] = 0;
+  public void createNewThread() {
+
+    // Setando os estados para 0 novamente
+
+    setState();
+
+    // Zerando as travas do pause
+
+    isLocked01 = 0;
+    isLocked02 = 0;
+    isLocked03 = 0;
+    isLocked04 = 0;
+    isLocked05 = 0;
+
+    // Resetando as imagens necessarias
+
+    thinkingButters.setImage(new Image("/assets/thinkingButters.png"));
+    thinkingKyle.setImage(new Image("/assets/thinkingKyle.png"));
+    thinkingEric.setImage(new Image("/assets/thinkingEric.png"));
+    thinkingStan.setImage(new Image("/assets/thinkingStan.png"));
+    thinkingKenny.setImage(new Image("/assets/thinkingKenny.png"));
+    plate01.setVisible(false);
+    plate02.setVisible(false);
+    plate03.setVisible(false);
+    plate04.setVisible(false);
+    plate05.setVisible(false);
+    fork01.setVisible(true);
+    fork02.setVisible(true);
+    fork03.setVisible(true);
+    fork04.setVisible(true);
+    fork05.setVisible(true);
+
+    // Setando os valores dos sliders como valores iniciais novamente
+
+    buttersTSlider.setValue(1);
+    kyleTSlider.setValue(1);
+    ericTSlider.setValue(1);
+    stanTSlider.setValue(1);
+    kennyTSlider.setValue(1);
+
+    buttersESlider.setValue(1);
+    kyleESlider.setValue(1);
+    ericESlider.setValue(1);
+    stanESlider.setValue(1);
+    kennyESlider.setValue(1);
+
+    // Criando novas threads para serem executadas
+
+    this.philosopher1 = new Philosopher(0);
+    this.philosopher2 = new Philosopher(1);
+    this.philosopher3 = new Philosopher(2);
+    this.philosopher4 = new Philosopher(3);
+    this.philosopher5 = new Philosopher(4);
+
+    // Setando os controllers dos filosofos
+
+    philosopher1.setController(this);
+    philosopher2.setController(this);
+    philosopher3.setController(this);
+    philosopher4.setController(this);
+    philosopher5.setController(this);
+
+    // Iniciando novamente as threads
+
+    philosopher1.start();
+    philosopher2.start();
+    philosopher3.start();
+    philosopher4.start();
+    philosopher5.start();
   }
 }
