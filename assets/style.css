@@ -1,0 +1,59 @@
+#pauseButton01 {
+    -fx-background-color: rgba(255, 187, 59, 0.685);
+    -fx-border-radius: 2px;
+    -fx-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    -fx-border-radius: 5px;
+    -fx-border-color: white
+}
+
+#pauseButton01:hover{
+    -fx-background-color: white;
+}
+
+#pauseButton02 {
+    -fx-background-color: rgba(255, 187, 59, 0.685);
+    -fx-border-radius: 2px;
+    -fx-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    -fx-border-radius: 5px;
+    -fx-border-color: white
+}
+
+#pauseButton02:hover{
+    -fx-background-color: white;
+}
+
+#pauseButton03 {
+    -fx-background-color: rgba(255, 187, 59, 0.685);
+    -fx-border-radius: 2px;
+    -fx-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    -fx-border-radius: 5px;
+    -fx-border-color: white
+}
+
+#pauseButton03:hover{
+    -fx-background-color: white;
+}
+
+#pauseButton04 {
+    -fx-background-color: rgba(255, 187, 59, 0.685);
+    -fx-border-radius: 2px;
+    -fx-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    -fx-border-radius: 5px;
+    -fx-border-color: white
+}
+
+#pauseButton04:hover{
+    -fx-background-color: white;
+}
+
+#pauseButton05 {
+    -fx-background-color: rgba(255, 187, 59, 0.685);
+    -fx-border-radius: 2px;
+    -fx-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    -fx-border-radius: 5px;
+    -fx-border-color: white
+}
+
+#pauseButton05:hover{
+    -fx-background-color: white;
+}

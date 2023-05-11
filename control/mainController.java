@@ -5,6 +5,8 @@ import java.util.ResourceBundle;
 import java.util.concurrent.Semaphore;
 
 import javafx.application.Platform;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -108,6 +110,24 @@ public class mainController implements Initializable {
 
   private Philosopher philosopher5;
 
+  // BOTAO DE PAUSE COM VARIAVEL DE TRAVA
+
+  @FXML
+  private Button pauseButton01;
+  private int isLocked01;
+  @FXML
+  private Button pauseButton02;
+  private int isLocked02;
+  @FXML
+  private Button pauseButton03;
+  private int isLocked03;
+  @FXML
+  private Button pauseButton04;
+  private int isLocked04;
+  @FXML
+  private Button pauseButton05;
+  private int isLocked05;
+
   // ARRAYS E SEMAFOROS
 
   private int nPhilosophers = 5;
@@ -131,7 +151,69 @@ public class mainController implements Initializable {
     philosopher3.setController(this);
     philosopher4.setController(this);
     philosopher5.setController(this);
-    
+
+    // Botoes de pause
+
+    pauseButton01.setOnAction(new EventHandler<ActionEvent>() {
+      @Override
+      public void handle(ActionEvent event) {
+        if (isLocked01 == 0) {
+          philosopher1.suspend();
+          isLocked01 = 1;
+        } else {
+          philosopher1.resume();
+        }
+      }
+    });
+
+    pauseButton02.setOnAction(new EventHandler<ActionEvent>() {
+      @Override
+      public void handle(ActionEvent event) {
+        if (isLocked02 == 0) {
+          philosopher2.suspend();
+          isLocked02 = 1;
+        } else {
+          philosopher2.resume();
+        }
+      }
+    });
+
+    pauseButton03.setOnAction(new EventHandler<ActionEvent>() {
+      @Override
+      public void handle(ActionEvent event) {
+        if (isLocked03 == 0) {
+          philosopher3.suspend();
+          isLocked03 = 1;
+        } else {
+          philosopher3.resume();
+        }
+      }
+    });
+
+    pauseButton04.setOnAction(new EventHandler<ActionEvent>() {
+      @Override
+      public void handle(ActionEvent event) {
+        if (isLocked04 == 0) {
+          philosopher4.suspend();
+          isLocked04 = 1;
+        } else {
+          philosopher4.resume();
+        }
+      }
+    });
+
+    pauseButton05.setOnAction(new EventHandler<ActionEvent>() {
+      @Override
+      public void handle(ActionEvent event) {
+        if (isLocked05 == 0) {
+          philosopher5.suspend();
+          isLocked05 = 1;
+        } else {
+          philosopher5.resume();
+        }
+      }
+    });
+
     // Startando as threads
     philosopher1.start();
     philosopher2.start();
