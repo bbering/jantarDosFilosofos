@@ -167,6 +167,7 @@ public class mainController implements Initializable {
           isLocked01 = 1;
         } else {
           philosopher1.resume();
+          isLocked01 = 0;
         }
       }
     });
@@ -179,6 +180,7 @@ public class mainController implements Initializable {
           isLocked02 = 1;
         } else {
           philosopher2.resume();
+          isLocked02 = 0;
         }
       }
     });
@@ -191,6 +193,7 @@ public class mainController implements Initializable {
           isLocked03 = 1;
         } else {
           philosopher3.resume();
+          isLocked03 = 0;
         }
       }
     });
@@ -203,6 +206,7 @@ public class mainController implements Initializable {
           isLocked04 = 1;
         } else {
           philosopher4.resume();
+          isLocked04 = 0;
         }
       }
     });
@@ -215,6 +219,7 @@ public class mainController implements Initializable {
           isLocked05 = 1;
         } else {
           philosopher5.resume();
+          isLocked05 = 0;
         }
       }
     });

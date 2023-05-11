@@ -1,10 +1,9 @@
 /* ***************************************************************
 * Autor............: Breno Bering Silva
-* Matricula........: 202110863
 * Inicio...........: 06/05/2023
-* Ultima alteracao.: 08/05/2023
+* Ultima alteracao.: 11/05/2023
 * Nome.............: Jantar dos Filósofos
-* Funcao...........: Resolver problema do Jantar dos Filosofos
+* Funcao...........: Resolver problema do Jantar dos Filósofos (concorrencia)
 *************************************************************** */
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
