@@ -12,7 +12,7 @@ O projeto envolve resolver o problema de recurso compartilhado no contexto do ja
 
 ```
 Clonar repositorio
-git clone git@github.com:bbering/jantarDosFilosofos.git
+git clone https://github.com/bbering/jantarDosFilosofos.git
 
 Executar na pasta raiz do programa (onde se encontra o .java principal) o seguinte comando:
 
